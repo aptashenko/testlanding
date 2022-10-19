@@ -48,7 +48,7 @@ export default {
     line-height: 150%;
     color: #111113;
     @media (max-width: 320px) {
-        font-size: 12px;
+        font-size: 11px;
       }
   }
   &__date, &__name {
