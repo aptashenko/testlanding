@@ -46,6 +46,9 @@ export default {
     @media (min-width: 450px) {
       padding: 0 46px;
     }
+    @media (max-width: 320px) {
+      font-size: 25px;
+    }
   }
   &__stats {
     font-family: 'SF Pro Text';
@@ -60,13 +63,18 @@ export default {
     @media (max-width: 376px) {
       font-size: 14px;
     }
+    @media (max-width: 320px) {
+      font-size: 12px;
+    }
   }
   &__rating {
     display: block;
-    width: 100%;
     width: 283px;
     max-width: 341px;
     margin: 10px auto 0;
+    @media (max-width: 320px) {
+      width: 256px;
+    }
   }
   &__button {
     display: block;

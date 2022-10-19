@@ -47,6 +47,9 @@ export default {
     font-size: 14px;
     line-height: 150%;
     color: #111113;
+    @media (max-width: 320px) {
+        font-size: 12px;
+      }
   }
   &__date, &__name {
     font-family: 'SF Pro Text';
@@ -57,6 +60,9 @@ export default {
     text-align: right;
     color: #111113;
     opacity: 0.5;
+    @media (max-width: 320px) {
+        font-size: 11px;
+      }
   }
   &__top {
     display: flex;
@@ -71,6 +77,7 @@ export default {
   &__rightSide {
     padding: 0;
     margin: 0;
+    margin-left: 20px;
     list-style: none;
   }
   &__body {
@@ -84,6 +91,9 @@ export default {
     font-size: 12px;
     line-height: 150%;
     color: #111113;
+    @media (max-width: 320px) {
+        font-size: 9px;
+      }
   }
 }
 </style>

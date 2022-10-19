@@ -46,6 +46,9 @@ export default {
         text-align: center;    
         color: #111113;
         margin: 0;
+        @media (max-width: 320px) {
+                font-size: 20px;
+            }
     }
     &__image {
         display: block;
@@ -62,6 +65,9 @@ export default {
         text-align: center;
         color: #111113;
         margin: 0 auto 25px;
+    @media (max-width: 320px) {
+            font-size: 12px;
+        }
     }
     &__list {
         margin: 0 auto 32px;
@@ -95,6 +101,9 @@ export default {
         color: #111113;
         &--bold {
             font-weight: 600;
+        }
+        @media (max-width: 320px) {
+            font-size: 12px;
         }
     }
 }
