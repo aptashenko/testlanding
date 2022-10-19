@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "core-js": "^3.8.3",
+    "lodash.throttle": "^4.1.1",
     "moment": "^2.29.4",
     "vue": "^2.6.14",
     "vue-core-video-player": "^0.2.0",

@@ -3,27 +3,28 @@
     <div class="container">
           <h1 class="startPage__title">Enhance <span class="startPage__title--red">potency & stamina</span> with the #1 app for
             men's health!</h1>
-          <video ref="player" class="startPage__video" src="../assets/video/timer.mp4" autoplay loop>
-            Sorry, your browser doesn't support this video
-          </video>
+          <VieoComp />
           <p class="startPage__stats">36k 5-star ratings | 1.8M+ downloads</p>
           <img class="startPage__rating" src="../assets/images/stats.jpg" alt="">
           <a href="#" class="startPage__button">Get the Dr. Kegel app</a>
     </div>
   </div>
 </template>
-
 <script>
-
+import VieoComp from '@/components/VideoComp.vue';
 export default {
+  components: { VieoComp },
 }
 </script>
-
 <style lang="scss">
 .container {
-  max-width: 375px;
+  max-width: 615px;
   padding: 32px 32px 48px;
   margin: 0 auto;
+  @media (max-width: 375px) {
+    max-width: 375px;
+    padding: 32px 32px 48px;
+  }
 }
 
 .startPage {
@@ -42,26 +43,34 @@ export default {
       color: red;
       font-family: inherit;
     }
-  }
-  &__video {
-    max-width: 100%;
-    margin: 32px auto;
-    display: block;
-    border: 2px solid #fff;
+    @media (min-width: 450px) {
+      padding: 0 46px;
+    }
   }
   &__stats {
+    font-family: 'SF Pro Text';
+    margin: 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 118.5%;
     text-align: center;
-    color: #fff;
+    color: #FFFFFF;
     opacity: 0.75;
-    margin: 0 auto;
+    @media (max-width: 376px) {
+      font-size: 14px;
+    }
   }
   &__rating {
+    display: block;
     width: 100%;
-    margin-top: 10px;
+    width: 283px;
+    max-width: 341px;
+    margin: 10px auto 0;
   }
   &__button {
     display: block;
-    margin-top: 48px;
+    margin: 48px auto 0;
     background: #FA2724;
     text-decoration: none;
     font-weight: 600;
@@ -70,7 +79,8 @@ export default {
     text-align: center;
     color: #FFFFFF;
     border-radius: 109px;
-    padding: 16px 42px;
+    padding: 16px 34px;
+    max-width: 311px;
     @media (max-width: 320px) {
       font-size: 16px;
     }
